@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faltu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+        <style>
+            .flex-container {
+              display: flex;
+              height: 1000px;
+              align-items: stretch;
+              background-color: DodgerBlue;
+            }
+            
+            .flex-container .first {
+              background-color: #f81f10;
+              width: 16%;
+              height: 100%;
+              margin: 1px;
+              text-align: center;
+              line-height: 75px;
+              font-size: 20px;
+            }
+            .flex-container .second {
+              background-color: #0a0808;
+              width: 84%;
+              height: 100%;
+              margin: 1px;
+              
+              line-height: 75px;
+              font-size: 10px;
+            }
+            .header{
+				width:100%;
+				height:60px;
+				background-color:#0a0e0a;
+			}
+			.logo{
+				color:#b7c2fd;
+				font-size:55px;
+				font-family:verdana;
+				text-align:center;
+				margin-top:0px;
+				float:left;
+				margin:0px;
+				line-height:50px;
+				padding-left:9px;
+                margin-left: 40%;
+			}
+            </style>
+    <title>Document</title>
+</head>
+<body>
+      <div class="header">
+        <h1 class="logo"><u><b> Li'L champ</b></u></h1>
+      </div>
+
+      <div class="flex-container">
+        <div class="first">
+            <div class="wrapper">
+			<!--header menu start--> 
+			
+			       <!--header menu end-->
+			       <!--sidebar start-->
+			        <div class="sidebar">
+				         <div class="sidebar-menu">
+				         	<center class="profile">
+					        	<img src="23.jpg" alt="">
+						        <p>Learning Is Fun</p>
+					        </center>
+					        <li class="item1">
+						       <a href="faltu.html" class="menu-btn">
+						      	  <i class="fas fa-home"></i><span>Home</span>
+						       </a>
+					        </li>
+				        	<li class="item1" id="profile">
+						        <a href="activity.html" class="menu-btn">
+						         	<i class="fas fa-video"></i><span>Activity</span>
+						        </a>
+							</li>
+					        <li class="item1" id="messages">
+						        <a href="game.html" class="menu-btn">
+							     <i class="fas fa-gamepad"></i><span>Gaming</span>
+					         	</a>
+				            	</li>
+				        	<li class="item1" id="settings">
+				          		<a href="feedback.html" class="menu-btn">
+						    	<i class="fas fa-comments"></i><span>Feedback </span>
+					         	</a>
+							</li>
+				         	<li class="item1">
+					        	<a href="aboutus.html" class="menu-btn">
+					     		<i class="far fa-address-card"></i><span>About Us</span>
+					         	</a>
+				        	</li>
+		        		 </div>
+			        </div>
+			          <!--sidebar end-->
+            </div>
+        </div>
+        <div class="second">
+            <div class="main-container">
+                <div class="container">
+                    <h1 style="color:red"><u><center>Fun Activity</center></u></h1>
+                </div>
+                    <div class="container">
+                    <h2 style="color:#F8DF8B"><u><i>English</i></u></h1>
+                    <video width="310"height="250"controls> <source src="This1.mp4" type="video/mp4"></video>
+                    <video width="310"height="250"controls> <source src="This2.mp4" type="video/mp4"></video>
+                    <video width="310"height="250"controls> <source src="This3.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="container">
+                    <h2 style="color:#F8DF8B"><u><i><b>हिंदी</b></i></u></h1>
+                    <video width="310"height="250"controls> <source src="This.mp4" type="video/mp4"></video>
+                    <video width="310"height="250"controls> <source src="This4.mp4" type="video/mp4"></video>
+                    <video width="310"height="250"controls> <source src="This5.mp4" type="video/mp4"></video>
+                    </div>
+                </div>  
+                </div>
+            </div>
+        </div> 
+      <script type="text/javascript">
+		$(document).ready(function(){
+			$(".sidebar-btn").click(function(){
+				$(".wrapper").toggleClass("collapse");
+			});
+		});
+	  </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
